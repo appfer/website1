@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta
+    charset="utf-8"
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+  <title>visweb</title>
+  <head>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css" />
+    <script src="https://js.arcgis.com/4.8/"></script>
+    <link />
+    <style>
+      body {
+        background-image: url("natuur_foto.png");
+      }
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 800px;
+        margin-top: 900px;
+        width: 1200px;
+        margin-left: 270px;
+      }
+      h1 {
+        color: rgb(0, 0, 5);
+        text-align: center;
+        font-size: 60px;
+      }
+      h2 {
+        font-size: 35px;
+        margin-top: 50px;
+        margin-left: 200px;
+      }
+      .vislocaties {
+        border: 2px solid rgb(0, 0, 0);
+        list-style: square;
+        float: left;
+        margin: 80px 0px 10px 50px;
+        width: 30%;
+      }
+      li {
+        font-size: 22px;
+        margin: 10px;
+      }
+      p {
+        font-size: 25px;
+        margin-top: 40px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 35px;
+        float: right;
+        margin: 0;
+        margin-right: 10px;
+      }
+      h2,
+      h3 {
+        width: 50%;
+        height: 60px;
+        padding: 0;
+        display: inline;
+      }
+      .vissoorten {
+        border: 2px solid rgb(0, 0, 0);
+        list-style: inside circle;
+        float: right;
+        margin: 0px 0px 10px 10px;
+        width: 30%;
+        margin-right: 150px;
+      }
+      img.image-karper {
+        display: block;
+        margin: 0;
+        margin-left: 100px;
+        margin-top: 100px;
+        float: left;
+        width: 400px;
+        height: 300px;
+        width: 30%;
+      }
+      img.image-snoekbaars {
+        display: block;
+        margin: 0px;
+        margin-right: 100px;
+        margin-top: 47px;
+        float: right;
+        width: 400px;
+        height: 300px;
+        width: 30%;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>De mooiste visplekken van Noord-Brabant</h1>
+    <h2>De locaties :</h2>
+    <h3>De meest voorkomende vissoorten in deze wateren :</h3>
+    <ul class="vislocaties">
+      <li>Amercentrale</li>
+      <li>biesbosch</li>
+      <li>schuivenoordseweg</li>
+      <li>t' gat van de ham</li>
+      <li>oude haven Drimmelen</li>
+      <li>brandput Lage Zwaluwe</li>
+      <li>middellandweg Biesbosch</li>
+      <li>halsche vliet Lange Weg</li>
+    </ul>
+    <i>
+      <ul class="vissoorten">
+        <li>snoek</li>
+        <li>snoekbaars</li>
+        <li>baars</li>
+        <li>meerval</li>
+        <li>roofblei</li>
+        <li>karpers</li>
+        <li>voorns</li>
+        <li>grondels</li>
+        <li>harder</li>
+        <li>paling</li>
+        <li>brasem</li>
+      </ul>
+    </i>
+    <img alt="foto van karper" src="karper.png" class="image-karper" />
+    <img
+      alt="foto van snoekbaars"
+      src="snoekbaars.png"
+      class="image-snoekbaars"
+    />
+    <div id="map"></div>
+    <div id="viewDiv"></div>
+    <p>
+      <i
+        ><b
+          >Het nationaal park De Biesbosch is een beschermd natuurgebied in
+          Noord-Brabant en Zuid-Holland. Het gebied beslaat een rivierdelta met
+          verschillende eilanden en kreken. Tezamen vormen deze wateren het
+          grootste zoetwatergetijdengebied van Europa! Je kunt je hier helemaal
+          terugtrekken om volop van de natuur te genieten. En dat doe je
+          natuurlijk het best door een dagje te gaan vissen.</b
+        ></i
+      >
+    </p>
+  </body>
+</html>
